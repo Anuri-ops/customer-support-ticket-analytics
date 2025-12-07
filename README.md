@@ -1,108 +1,128 @@
-📊 **CUSTOMER SUPPORT TICKET ANALYTICS — SQL + PYTHON**
+# 🎟️ Customer Support Ticket Analytics — SQL + Python  
 
-This project analyses a customer support ticket dataset to understand patterns in ticket volume, customer satisfaction, and support performance across different communication channels.
+This project analyses a synthetic customer support ticket dataset to explore patterns in:
+- Ticket volume across support channels  
+- Customer satisfaction  
+- Resolution performance and priority trends  
 
-The workflow includes turning raw CSV data into a SQLite database, running SQL queries for insights, and visualising results using Python.
+Raw CSV data is converted into a SQLite database, queried with SQL, and visualised using Python.
+
+---
+
+## 📂 Dataset  
+
+**Source:** Kaggle — *Customer Support Tickets Dataset*  
+**Format:** CSV  
+
+The dataset simulates real-world support analytics such as:
+- Channel usage
+- Ticket prioritisation
+- Satisfaction levels
+- Resolution efficiency  
+
+---
+
+## 🛠️ Tools & Technologies  
+
+| Category | Technology |
+|---------|------------|
+| Database | SQLite |
+| Query Language | SQL |
+| Programming Language | Python |
+| Python Libraries | Pandas, Matplotlib |
+| Environment | VS Code |
+
+---
+
+## 📁 Project Structure  
 
 
-
-🗂 **DATASET**
-
-**Source**: Kaggle — Customer Support Tickets Dataset
-
-**Format**: CSV
-
-Used to simulate real-world support analytics: channel performance, satisfaction levels, resolution efficiency, and ticket prioritisation.
-
-
-
-🧰 **TOOLS & TECHNOLOGIES**
-
-**CATEGORY	TECHNOLOGY**
-  Database	SQLite
-  Querying	SQL
-  Language	Python
-  Libraries	Pandas, Matplotlib
-  Environment	VS Code
-
-
-
-📁 **PROJECT STRUCTURE**
-
+```
 customer-support-ticket-analytics/
 │
-├── data/                           # Raw dataset
-
+├── data/
 │   └── customer_support_tickets.csv
-├── images/                         # Generated visual outputs
-
+│
+├── images/
 │   └── tickets_by_channel.png
+│
 ├── src/
+│   ├── setup_database.py      # Creates SQLite database from CSV
+│   └── run_queries.py         # Runs SQL queries and visualisations
+│
+├── customer_support.db        # SQLite database file
+└── README.md                  # Project documentation
 
-│   ├── setup_database.py           # Creates SQLite database from CSV
-│   └── run_queries.py              # Runs SQL and visualisations
+```
 
-├── customer_support.db             # SQLite database file
+---
 
-└── README.md                       # Project documentation
+### ▶️ How to Run
+
+1. **Install required libraries**
+
+   ```sh
+   python -m pip install pandas matplotlib
+   ```
+
+2. **Create the database**
+
+   ```sh
+   python src/setup_database.py
+   ```
+
+3. **Run SQL queries and generate visual output**
+
+   ```sh
+   python src/run_queries.py
+   ```
+
+---
+
+### 📈 Sample Output
+
+> **Tickets Chart**
+
+<img src="images/tickets_by_channel.png" width="400"/>
+
+---
+
+### 🔍 Insights
+
+* Support channels receive varying request volumes.
+* Satisfaction levels differ depending on the customer contact method.
+* Resolution efficiency varies by priority category.
+* Channel data can help optimise staffing and customer support workflows.
+
+---
+
+### 🧠 Skills Demonstrated
+
+* Data cleaning and preparation
+* SQL querying and relational schema fundamentals
+* Python data analysis with Pandas
+* Chart visualisation using Matplotlib
+* Project structure and documentation
+* Git & GitHub version control
+
+---
+
+### 🚀 Future Improvements
+
+* Add an interactive dashboard (Streamlit, Tableau, or Power BI)
+* Build a predictive model (resolution time or CSAT scoring)
+* Automate reporting pipeline
+
+---
 
 
-
-🚀 **HOW TO RUN**
-
-1️⃣ Install required libraries:
-python -m pip install pandas matplotlib
-
-2️⃣ Create the database:
-python src/setup_database.py
-
-3️⃣ Run analysis and generate visual output:
-python src/run_queries.py
-
-
-
-📈 **OUTPUT**
-
-Tickets by Support Channel
-<img src="images/tickets_by_channel.png" width="450">
-
-
-
-🔍 **INSIGHTS**
-
-Support channels receive varying volumes of requests.
-Customer satisfaction and resolution time vary depending on the support method.
-Insight into channel usage can guide resource allocation and workflow optimisation.
-
-
-
-🧠 **SKILLS**
-
-Data loading and cleaning
-
-SQL querying and relational database design
-
-Python data analysis
-
-Visual storytelling with charts
-
-Project structuring and documentation
-
-Git/GitHub readiness
-
-
-
-📌 **FUTURE IMPROVEMENTS**
-
-Add an interactive dashboard (Streamlit, Tableau, or Power BI)
-
-Build a prediction model (e.g., resolution time or satisfaction)
-
-Add an automated reporting pipeline
+---
 
 
 If you find this useful or have suggestions, feel free to fork the repository or open an issue!
 
-🔗 Author
+---
 
-**Anuri Nwagbara**
+### 🔗 Author
+
+**Anuri N. C. Nwagbara**
