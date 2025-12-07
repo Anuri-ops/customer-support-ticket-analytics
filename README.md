@@ -11,6 +11,7 @@ Querying	SQL
 Language	Python
 Libraries	Pandas, Matplotlib
 Environment	VS Code
+
 📁 Project Structure
 customer-support-ticket-analytics/
 │
@@ -37,6 +38,7 @@ python src/run_queries.py
 📈 Example Output
 Tickets by Support Channel
 <img src="images/tickets_by_channel.png" width="450">
+
 🔍 Insights
 
 Support channels receive varying volumes of requests.
