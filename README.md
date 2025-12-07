@@ -13,16 +13,21 @@ Libraries	Pandas, Matplotlib
 Environment	VS Code
 
 📁 Project Structure
+
 customer-support-ticket-analytics/
 │
 ├── data/                           # Raw dataset
+
 │   └── customer_support_tickets.csv
 ├── images/                         # Generated visual outputs
+
 │   └── tickets_by_channel.png
 ├── src/
 │   ├── setup_database.py           # Creates SQLite database from CSV
+
 │   └── run_queries.py              # Runs SQL and visualizations
 ├── customer_support.db             # SQLite database file
+
 └── README.md                       # Project documentation
 
 🚀 How to Run
